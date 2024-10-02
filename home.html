@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1><img src="logo.png" alt="My E-commerce Store Logo" id="logo"></h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search...">
+            <div class="dropdown" id="search-dropdown">
+                <a href="home.html">Home</a>
+                <a href="clothing.html">Clothing</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="cart.html">Cart</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <h2>Welcome to My E-commerce Store</h2>
+        <p>Discover our amazing products</p>
+        <button>Shop Now</button>
+    </section>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <!-- Placeholder for featured products -->
+    </section>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <!-- Placeholder for categories -->
+    </section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <!-- Placeholder for testimonials -->
+    </section>
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 My E-commerce Store</p>
+</footer>
+
+<script>
+    document.getElementById('search').addEventListener('input', function() {
+        document.getElementById('search-dropdown').style.display = 'block';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothing - My E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1><img src="logo.png" alt="My E-commerce Store Logo" id="logo"></h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search...">
+            <div class="dropdown" id="search-dropdown">
+                <a href="home.html">Home</a>
+                <a href="clothing.html">Clothing</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="cart.html">Cart</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <h2>Clothing</h2>
+        <p>Explore our latest collection of clothing</p>
+        <button>Shop Now</button>
+    </section>
+    <section class="featured-products">
+        <h2>Featured Clothing</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="path/to/product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="path/to/product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more product items as needed -->
+        </div>
+    </section>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <h3>Category 1</h3>
+                <p>Description of Category 1</p>
+            </div>
+            <div class="category-item">
+                <h3>Category 2</h3>
+                <p>Description of Category 2</p>
+            </div>
+            <div class="category-item">
+                <h3>Category 3</h3>
+                <p>Description of Category 3</p>
+            </div>
+            <!-- Add more category items as needed -->
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 My E-commerce Store</p>
+</footer>
+
+<script>
+    document.getElementById('search').addEventListener('input', function() {
+        document.getElementById('search-dropdown').style.display = 'block';
+    });
+</script>
+</body>
+</html>
